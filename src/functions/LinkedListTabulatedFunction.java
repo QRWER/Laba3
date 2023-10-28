@@ -61,4 +61,5 @@ public class LinkedListTabulatedFunction {
         countOfNodes--;
         return deleteNode;
     }
+
 }
