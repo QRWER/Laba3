@@ -38,7 +38,7 @@ public class LinkedListTabulatedFunction {
         return tmp;
     }
 
-    private FunctionNode FunctionNodeaddNodeToTail(){
+    private FunctionNode addNodeToTail(){
         FunctionNode tmp = getNodeByIndex(countOfNodes-1);
         tmp.next = new FunctionNode();
         countOfNodes++;
