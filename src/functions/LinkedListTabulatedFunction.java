@@ -51,7 +51,7 @@ public class LinkedListTabulatedFunction {
         oldNode.prev.next = newNode;
         oldNode.prev = newNode;
         countOfNodes++;
-        return newNode;
+        return newNode; //Test
     }
 
     private FunctionNode deleteNodeByIndex(int index){
