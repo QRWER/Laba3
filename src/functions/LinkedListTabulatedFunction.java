@@ -186,7 +186,10 @@ public class LinkedListTabulatedFunction implements TabulatedFunction{
         }
         if(point.getX() == tmp.data.getX()) throw new InappropriateFunctionPointException("Illegal argument");
         if(tmp == head.prev){
-            addNodeToTail();
+            if(point.getX()>head.prev.data.getX())
+                addNodeToTail();
+            else
+                addNodeByIndex(countOfNodes-1);
         }
         else if(tmp == head.next){
             addNodeToHead();
